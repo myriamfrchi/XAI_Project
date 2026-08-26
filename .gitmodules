@@ -1,0 +1,9 @@
+[submodule "Strokes-w_o-recommendation"]
+	path = Strokes-w_o-recommendation
+	url = git@github.com:myriamfrchi/Strokes-w_o-recommendation.git
+[submodule "Strokes-with-recommendation"]
+	path = Strokes-with-recommendation
+	url = git@github.com:myriamfrchi/Strokes-with-recommendation.git
+[submodule "XAI_AAL"]
+	path = XAI_AAL
+	url = git@github.com:myriamfrchi/XAI_AAL.git
