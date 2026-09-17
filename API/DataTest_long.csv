@@ -1,0 +1,397 @@
+TAB,INDICATOR,ATTRIBUTE_TYPE,SUMMARIZE_BY,subject_id,site_id,site_country,discharge_quarter,discharge_year,variable,Value,YQ
+PC,Age,Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,age,82,2021 Q4
+PC,Age,Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,age,52,2021 Q4
+PC,Age,Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,age,80,2019 Q2
+PC,Age,Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,age,62,2021 Q3
+PC,Age,Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,age,63,2020 Q2
+PC,Age,Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,age,75,2021 Q2
+PC,Gender,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,gender,female,2021 Q4
+PC,Gender,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,gender,female,2021 Q4
+PC,Gender,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,gender,female,2019 Q2
+PC,Gender,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,gender,male,2021 Q3
+PC,Gender,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,gender,female,2020 Q2
+PC,Gender,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,gender,female,2021 Q2
+PC,In-hospital stroke,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,hospital_stroke,0,2021 Q4
+PC,In-hospital stroke,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,hospital_stroke,0,2021 Q4
+PC,In-hospital stroke,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,hospital_stroke,0,2019 Q2
+PC,In-hospital stroke,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,hospital_stroke,0,2021 Q3
+PC,In-hospital stroke,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,hospital_stroke,0,2020 Q2
+PC,In-hospital stroke,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,hospital_stroke,0,2021 Q2
+PC,Hospitalized at unit,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,hospitalized_in,ICU/stroke unit,2021 Q4
+PC,Hospitalized at unit,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,hospitalized_in,ICU/stroke unit,2021 Q4
+PC,Hospitalized at unit,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,hospitalized_in,ICU/stroke unit,2019 Q2
+PC,Hospitalized at unit,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,hospitalized_in,ICU/stroke unit,2021 Q3
+PC,Hospitalized at unit,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,hospitalized_in,ICU/stroke unit,2020 Q2
+PC,Hospitalized at unit,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,hospitalized_in,ICU/stroke unit,2021 Q2
+PC,Hospitalized at department,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,department_type,neurology,2021 Q4
+PC,Hospitalized at department,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,department_type,neurology,2021 Q4
+PC,Hospitalized at department,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,department_type,neurology,2019 Q2
+PC,Hospitalized at department,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,department_type,neurology,2021 Q3
+PC,Hospitalized at department,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,department_type,neurology,2020 Q2
+PC,Hospitalized at department,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,department_type,neurology,2021 Q2
+PC,Type of stroke,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,stroke_type,ischemic,2021 Q4
+PC,Type of stroke,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,stroke_type,ischemic,2021 Q4
+PC,Type of stroke,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,stroke_type,ischemic,2019 Q2
+PC,Type of stroke,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,stroke_type,ischemic,2021 Q3
+PC,Type of stroke,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,stroke_type,ischemic,2020 Q2
+PC,Type of stroke,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,stroke_type,ischemic,2021 Q2
+PC,NIHSS,Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,nihss_score,5.0,2021 Q4
+PC,NIHSS,Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,nihss_score,8.0,2021 Q4
+PC,NIHSS,Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,nihss_score,4.0,2019 Q2
+PC,NIHSS,Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,nihss_score,8.0,2021 Q3
+PC,NIHSS,Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,nihss_score,18.0,2020 Q2
+PC,NIHSS,Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,nihss_score,11.0,2021 Q2
+Treatment,Number of IVT,Categorical_binary,count,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,thrombolysis,1,2021 Q4
+Treatment,Number of IVT,Categorical_binary,count,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,thrombolysis,1,2021 Q4
+Treatment,Number of IVT,Categorical_binary,count,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,thrombolysis,1,2019 Q2
+Treatment,Number of IVT,Categorical_binary,count,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,thrombolysis,1,2021 Q3
+Treatment,Number of IVT,Categorical_binary,count,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,thrombolysis,1,2020 Q2
+Treatment,Number of IVT,Categorical_binary,count,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,thrombolysis,1,2021 Q2
+PO,Reasons for not providing IVT,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,no_thrombolysis_reason,,2021 Q4
+PO,Reasons for not providing IVT,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,no_thrombolysis_reason,,2021 Q4
+PO,Reasons for not providing IVT,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,no_thrombolysis_reason,,2019 Q2
+PO,Reasons for not providing IVT,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,no_thrombolysis_reason,,2021 Q3
+PO,Reasons for not providing IVT,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,no_thrombolysis_reason,,2020 Q2
+PO,Reasons for not providing IVT,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,no_thrombolysis_reason,,2021 Q2
+Treatment,"Door-to-needle for IVT, median",Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,door_to_needle,20.0,2021 Q4
+Treatment,"Door-to-needle for IVT, median",Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,door_to_needle,15.0,2021 Q4
+Treatment,"Door-to-needle for IVT, median",Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,door_to_needle,23.0,2019 Q2
+Treatment,"Door-to-needle for IVT, median",Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,door_to_needle,103.0,2021 Q3
+Treatment,"Door-to-needle for IVT, median",Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,door_to_needle,25.0,2020 Q2
+Treatment,"Door-to-needle for IVT, median",Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,door_to_needle,13.0,2021 Q2
+Treatment,Door-to-groin for MT,Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,door_to_groin,,2021 Q4
+Treatment,Door-to-groin for MT,Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,door_to_groin,35.0,2021 Q4
+Treatment,Door-to-groin for MT,Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,door_to_groin,,2019 Q2
+Treatment,Door-to-groin for MT,Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,door_to_groin,,2021 Q3
+Treatment,Door-to-groin for MT,Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,door_to_groin,73.0,2020 Q2
+Treatment,Door-to-groin for MT,Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,door_to_groin,31.0,2021 Q2
+Imaging,Door-to-imaging time,Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,door_to_imaging,19.0,2021 Q4
+Imaging,Door-to-imaging time,Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,door_to_imaging,9.0,2021 Q4
+Imaging,Door-to-imaging time,Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,door_to_imaging,16.0,2019 Q2
+Imaging,Door-to-imaging time,Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,door_to_imaging,1,2021 Q3
+Imaging,Door-to-imaging time,Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,door_to_imaging,10.0,2020 Q2
+Imaging,Door-to-imaging time,Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,door_to_imaging,11.0,2021 Q2
+Treatment,"Onset-to-door time for IVT, median",Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,onset_to_door,155.0,2021 Q4
+Treatment,"Onset-to-door time for IVT, median",Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,onset_to_door,95.0,2021 Q4
+Treatment,"Onset-to-door time for IVT, median",Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,onset_to_door,60.0,2019 Q2
+Treatment,"Onset-to-door time for IVT, median",Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,onset_to_door,42.0,2021 Q3
+Treatment,"Onset-to-door time for IVT, median",Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,onset_to_door,75.0,2020 Q2
+Treatment,"Onset-to-door time for IVT, median",Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,onset_to_door,104.0,2021 Q2
+Imaging,Imaging not done at all,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,imaging_done,1,2021 Q4
+Imaging,Imaging not done at all,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,imaging_done,1,2021 Q4
+Imaging,Imaging not done at all,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,imaging_done,1,2019 Q2
+Imaging,Imaging not done at all,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,imaging_done,1,2021 Q3
+Imaging,Imaging not done at all,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,imaging_done,1,2020 Q2
+Imaging,Imaging not done at all,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,imaging_done,1,2021 Q2
+Imaging,Imaging modality,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,imaging_type,CT CTA,2021 Q4
+Imaging,Imaging modality,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,imaging_type,CT CTA,2021 Q4
+Imaging,Imaging modality,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,imaging_type,CT CTA,2019 Q2
+Imaging,Imaging modality,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,imaging_type,CT CTA,2021 Q3
+Imaging,Imaging modality,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,imaging_type,CT CTA,2020 Q2
+Imaging,Imaging modality,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,imaging_type,CT CTA,2021 Q2
+PO,Test for dysphagia screen,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,dysphagia_screening_type,,2021 Q4
+PO,Test for dysphagia screen,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,dysphagia_screening_type,GUSS,2021 Q4
+PO,Test for dysphagia screen,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,dysphagia_screening_type,,2019 Q2
+PO,Test for dysphagia screen,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,dysphagia_screening_type,GUSS,2021 Q3
+PO,Test for dysphagia screen,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,dysphagia_screening_type,GUSS,2020 Q2
+PO,Test for dysphagia screen,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,dysphagia_screening_type,GUSS,2021 Q2
+PC,Anti Diabetics,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_antidiabetics,0,2021 Q4
+PC,Anti Diabetics,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_antidiabetics,0,2021 Q4
+PC,Anti Diabetics,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_antidiabetics,0,2019 Q2
+PC,Anti Diabetics,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_antidiabetics,1,2021 Q3
+PC,Anti Diabetics,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_antidiabetics,0,2020 Q2
+PC,Anti Diabetics,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_antidiabetics,1,2021 Q2
+PC,Cilostazol,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_cilostazol,0,2021 Q4
+PC,Cilostazol,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_cilostazol,0,2021 Q4
+PC,Cilostazol,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_cilostazol,0,2019 Q2
+PC,Cilostazol,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_cilostazol,0,2021 Q3
+PC,Cilostazol,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_cilostazol,0,2020 Q2
+PC,Cilostazol,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_cilostazol,0,2021 Q2
+PC,Clopidogrel,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_clopidrogel,0.0,2021 Q4
+PC,Clopidogrel,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_clopidrogel,0.0,2021 Q4
+PC,Clopidogrel,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_clopidrogel,0.0,2019 Q2
+PC,Clopidogrel,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_clopidrogel,0.0,2021 Q3
+PC,Clopidogrel,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_clopidrogel,0.0,2020 Q2
+PC,Clopidogrel,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_clopidrogel,0.0,2021 Q2
+PC,Ticagrelol,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_ticagrelor,0.0,2021 Q4
+PC,Ticagrelol,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_ticagrelor,0.0,2021 Q4
+PC,Ticagrelol,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_ticagrelor,0.0,2019 Q2
+PC,Ticagrelol,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_ticagrelor,0.0,2021 Q3
+PC,Ticagrelol,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_ticagrelor,0.0,2020 Q2
+PC,Ticagrelol,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_ticagrelor,0.0,2021 Q2
+PC,Ticlopidine,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_ticlopidine,0.0,2021 Q4
+PC,Ticlopidine,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_ticlopidine,0.0,2021 Q4
+PC,Ticlopidine,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_ticlopidine,0.0,2019 Q2
+PC,Ticlopidine,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_ticlopidine,0.0,2021 Q3
+PC,Ticlopidine,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_ticlopidine,0.0,2020 Q2
+PC,Ticlopidine,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_ticlopidine,0.0,2021 Q2
+PC,Prasugrel,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_prasugrel,0.0,2021 Q4
+PC,Prasugrel,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_prasugrel,0.0,2021 Q4
+PC,Prasugrel,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_prasugrel,0.0,2019 Q2
+PC,Prasugrel,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_prasugrel,0.0,2021 Q3
+PC,Prasugrel,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_prasugrel,0.0,2020 Q2
+PC,Prasugrel,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_prasugrel,0.0,2021 Q2
+PC,"Dipyridamol, slow release",Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_dipyridamol,0.0,2021 Q4
+PC,"Dipyridamol, slow release",Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_dipyridamol,0.0,2021 Q4
+PC,"Dipyridamol, slow release",Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_dipyridamol,0.0,2019 Q2
+PC,"Dipyridamol, slow release",Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_dipyridamol,0.0,2021 Q3
+PC,"Dipyridamol, slow release",Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_dipyridamol,0.0,2020 Q2
+PC,"Dipyridamol, slow release",Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_dipyridamol,0.0,2021 Q2
+PC,Warfarin,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,before_onset_warfarin,0.0,2021 Q4
+PC,Warfarin,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,before_onset_warfarin,0.0,2021 Q4
+PC,Warfarin,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,before_onset_warfarin,0.0,2019 Q2
+PC,Warfarin,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,before_onset_warfarin,0.0,2021 Q3
+PC,Warfarin,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,before_onset_warfarin,0.0,2020 Q2
+PC,Warfarin,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,before_onset_warfarin,0.0,2021 Q2
+PC,Hypertension,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_hypertension,1.0,2021 Q4
+PC,Hypertension,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_hypertension,1.0,2021 Q4
+PC,Hypertension,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_hypertension,1.0,2019 Q2
+PC,Hypertension,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_hypertension,1.0,2021 Q3
+PC,Hypertension,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_hypertension,0.0,2020 Q2
+PC,Hypertension,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_hypertension,1.0,2021 Q2
+PC,Diabetes,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_diabetes,1.0,2021 Q4
+PC,Diabetes,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_diabetes,0.0,2021 Q4
+PC,Diabetes,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_diabetes,1.0,2019 Q2
+PC,Diabetes,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_diabetes,1.0,2021 Q3
+PC,Diabetes,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_diabetes,0.0,2020 Q2
+PC,Diabetes,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_diabetes,1.0,2021 Q2
+PC,Hyperlipidemia,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_hyperlipidemia,0.0,2021 Q4
+PC,Hyperlipidemia,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_hyperlipidemia,0.0,2021 Q4
+PC,Hyperlipidemia,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_hyperlipidemia,1.0,2019 Q2
+PC,Hyperlipidemia,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_hyperlipidemia,1.0,2021 Q3
+PC,Hyperlipidemia,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_hyperlipidemia,1.0,2020 Q2
+PC,Hyperlipidemia,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_hyperlipidemia,1.0,2021 Q2
+PC,Cong. Heart Fail,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_congestive_heart_failure,0.0,2021 Q4
+PC,Cong. Heart Fail,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_congestive_heart_failure,0.0,2021 Q4
+PC,Cong. Heart Fail,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_congestive_heart_failure,0.0,2019 Q2
+PC,Cong. Heart Fail,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_congestive_heart_failure,0.0,2021 Q3
+PC,Cong. Heart Fail,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_congestive_heart_failure,0.0,2020 Q2
+PC,Cong. Heart Fail,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_congestive_heart_failure,0.0,2021 Q2
+PC,Active smoker,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_smoker,0.0,2021 Q4
+PC,Active smoker,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_smoker,0.0,2021 Q4
+PC,Active smoker,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_smoker,0.0,2019 Q2
+PC,Active smoker,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_smoker,0.0,2021 Q3
+PC,Active smoker,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_smoker,0.0,2020 Q2
+PC,Active smoker,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_smoker,0.0,2021 Q2
+PC,Previous IS/TIA,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_previous_ischemic_stroke,0.0,2021 Q4
+PC,Previous IS/TIA,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_previous_ischemic_stroke,1.0,2021 Q4
+PC,Previous IS/TIA,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_previous_ischemic_stroke,,2019 Q2
+PC,Previous IS/TIA,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_previous_ischemic_stroke,,2021 Q3
+PC,Previous IS/TIA,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_previous_ischemic_stroke,,2020 Q2
+PC,Previous IS/TIA,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_previous_ischemic_stroke,,2021 Q2
+PC,Previous ICH,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_previous_hemorrhagic_stroke,0.0,2021 Q4
+PC,Previous ICH,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_previous_hemorrhagic_stroke,0.0,2021 Q4
+PC,Previous ICH,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_previous_hemorrhagic_stroke,,2019 Q2
+PC,Previous ICH,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_previous_hemorrhagic_stroke,,2021 Q3
+PC,Previous ICH,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_previous_hemorrhagic_stroke,,2020 Q2
+PC,Previous ICH,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_previous_hemorrhagic_stroke,,2021 Q2
+PC,Cor. Artery Disease / Previous MI,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_coronary_artery_disease_or_myocardial_infarction,1.0,2021 Q4
+PC,Cor. Artery Disease / Previous MI,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_coronary_artery_disease_or_myocardial_infarction,0.0,2021 Q4
+PC,Cor. Artery Disease / Previous MI,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_coronary_artery_disease_or_myocardial_infarction,,2019 Q2
+PC,Cor. Artery Disease / Previous MI,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_coronary_artery_disease_or_myocardial_infarction,,2021 Q3
+PC,Cor. Artery Disease / Previous MI,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_coronary_artery_disease_or_myocardial_infarction,,2020 Q2
+PC,Cor. Artery Disease / Previous MI,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_coronary_artery_disease_or_myocardial_infarction,,2021 Q2
+PC,HIV,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,risk_hiv,0.0,2021 Q4
+PC,HIV,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,risk_hiv,0.0,2021 Q4
+PC,HIV,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,risk_hiv,,2019 Q2
+PC,HIV,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,risk_hiv,,2021 Q3
+PC,HIV,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,risk_hiv,,2020 Q2
+PC,HIV,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,risk_hiv,,2021 Q2
+Discharge,Anti Diabetics,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_antidiabetics,0.0,2021 Q4
+Discharge,Anti Diabetics,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_antidiabetics,0.0,2021 Q4
+Discharge,Anti Diabetics,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_antidiabetics,,2019 Q2
+Discharge,Anti Diabetics,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_antidiabetics,,2021 Q3
+Discharge,Anti Diabetics,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_antidiabetics,,2020 Q2
+Discharge,Anti Diabetics,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_antidiabetics,,2021 Q2
+Discharge,Cilostazol,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_cilostazol,0.0,2021 Q4
+Discharge,Cilostazol,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_cilostazol,0.0,2021 Q4
+Discharge,Cilostazol,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_cilostazol,0.0,2019 Q2
+Discharge,Cilostazol,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_cilostazol,0.0,2021 Q3
+Discharge,Cilostazol,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_cilostazol,0.0,2020 Q2
+Discharge,Cilostazol,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_cilostazol,0.0,2021 Q2
+Discharge,Clopidogrel,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_clopidrogel,0.0,2021 Q4
+Discharge,Clopidogrel,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_clopidrogel,0.0,2021 Q4
+Discharge,Clopidogrel,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_clopidrogel,0.0,2019 Q2
+Discharge,Clopidogrel,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_clopidrogel,0.0,2021 Q3
+Discharge,Clopidogrel,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_clopidrogel,0.0,2020 Q2
+Discharge,Clopidogrel,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_clopidrogel,0.0,2021 Q2
+Discharge,Ticagrelol,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_ticagrelor,0.0,2021 Q4
+Discharge,Ticagrelol,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_ticagrelor,0.0,2021 Q4
+Discharge,Ticagrelol,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_ticagrelor,0.0,2019 Q2
+Discharge,Ticagrelol,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_ticagrelor,0.0,2021 Q3
+Discharge,Ticagrelol,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_ticagrelor,0.0,2020 Q2
+Discharge,Ticagrelol,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_ticagrelor,0.0,2021 Q2
+Discharge,Ticlopidine,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_ticlopidine,0.0,2021 Q4
+Discharge,Ticlopidine,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_ticlopidine,0.0,2021 Q4
+Discharge,Ticlopidine,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_ticlopidine,0.0,2019 Q2
+Discharge,Ticlopidine,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_ticlopidine,0.0,2021 Q3
+Discharge,Ticlopidine,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_ticlopidine,0.0,2020 Q2
+Discharge,Ticlopidine,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_ticlopidine,0.0,2021 Q2
+Discharge,Prasugrel,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_prasugrel,0.0,2021 Q4
+Discharge,Prasugrel,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_prasugrel,0.0,2021 Q4
+Discharge,Prasugrel,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_prasugrel,0.0,2019 Q2
+Discharge,Prasugrel,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_prasugrel,0.0,2021 Q3
+Discharge,Prasugrel,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_prasugrel,0.0,2020 Q2
+Discharge,Prasugrel,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_prasugrel,0.0,2021 Q2
+Discharge,"Dipyridamol, slow release",Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_dipyridamol,0.0,2021 Q4
+Discharge,"Dipyridamol, slow release",Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_dipyridamol,0.0,2021 Q4
+Discharge,"Dipyridamol, slow release",Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_dipyridamol,,2019 Q2
+Discharge,"Dipyridamol, slow release",Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_dipyridamol,,2021 Q3
+Discharge,"Dipyridamol, slow release",Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_dipyridamol,,2020 Q2
+Discharge,"Dipyridamol, slow release",Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_dipyridamol,,2021 Q2
+Discharge,Warfarin for AF,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_warfarin,0.0,2021 Q4
+Discharge,Warfarin for AF,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_warfarin,0.0,2021 Q4
+Discharge,Warfarin for AF,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_warfarin,0.0,2019 Q2
+Discharge,Warfarin for AF,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_warfarin,0.0,2021 Q3
+Discharge,Warfarin for AF,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_warfarin,0.0,2020 Q2
+Discharge,Warfarin for AF,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_warfarin,0.0,2021 Q2
+Discharge,Dabigatran for AF,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_dabigatran,0.0,2021 Q4
+Discharge,Dabigatran for AF,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_dabigatran,1.0,2021 Q4
+Discharge,Dabigatran for AF,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_dabigatran,0.0,2019 Q2
+Discharge,Dabigatran for AF,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_dabigatran,0.0,2021 Q3
+Discharge,Dabigatran for AF,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_dabigatran,1.0,2020 Q2
+Discharge,Dabigatran for AF,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_dabigatran,1.0,2021 Q2
+Discharge,Rivoroxaban for AF,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_rivaroxaban,0.0,2021 Q4
+Discharge,Rivoroxaban for AF,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_rivaroxaban,0.0,2021 Q4
+Discharge,Rivoroxaban for AF,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_rivaroxaban,0.0,2019 Q2
+Discharge,Rivoroxaban for AF,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_rivaroxaban,0.0,2021 Q3
+Discharge,Rivoroxaban for AF,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_rivaroxaban,0.0,2020 Q2
+Discharge,Rivoroxaban for AF,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_rivaroxaban,0.0,2021 Q2
+Discharge,Apixaban for AF,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_apixaban,0.0,2021 Q4
+Discharge,Apixaban for AF,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_apixaban,0.0,2021 Q4
+Discharge,Apixaban for AF,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_apixaban,0.0,2019 Q2
+Discharge,Apixaban for AF,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_apixaban,0.0,2021 Q3
+Discharge,Apixaban for AF,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_apixaban,0.0,2020 Q2
+Discharge,Apixaban for AF,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_apixaban,0.0,2021 Q2
+Discharge,Edoxaban for AF,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_edoxaban,0.0,2021 Q4
+Discharge,Edoxaban for AF,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_edoxaban,0.0,2021 Q4
+Discharge,Edoxaban for AF,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_edoxaban,0.0,2019 Q2
+Discharge,Edoxaban for AF,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_edoxaban,0.0,2021 Q3
+Discharge,Edoxaban for AF,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_edoxaban,0.0,2020 Q2
+Discharge,Edoxaban for AF,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_edoxaban,0.0,2021 Q2
+Discharge,Low molecular weight heparin/heparin for AF,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_heparin,0.0,2021 Q4
+Discharge,Low molecular weight heparin/heparin for AF,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_heparin,0.0,2021 Q4
+Discharge,Low molecular weight heparin/heparin for AF,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_heparin,0.0,2019 Q2
+Discharge,Low molecular weight heparin/heparin for AF,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_heparin,1.0,2021 Q3
+Discharge,Low molecular weight heparin/heparin for AF,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_heparin,0.0,2020 Q2
+Discharge,Low molecular weight heparin/heparin for AF,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_heparin,0.0,2021 Q2
+Bleeding,Source of bleeding found,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,bleeding_source,,2021 Q4
+Bleeding,Source of bleeding found,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,bleeding_source,,2021 Q4
+Bleeding,Source of bleeding found,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,bleeding_source,,2019 Q2
+Bleeding,Source of bleeding found,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,bleeding_source,,2021 Q3
+Bleeding,Source of bleeding found,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,bleeding_source,,2020 Q2
+Bleeding,Source of bleeding found,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,bleeding_source,,2021 Q2
+Discharge,Modified ranking scale discharge,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_mrs,5.0,2021 Q4
+Discharge,Modified ranking scale discharge,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_mrs,1,2021 Q4
+Discharge,Modified ranking scale discharge,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_mrs,4.0,2019 Q2
+Discharge,Modified ranking scale discharge,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_mrs,4.0,2021 Q3
+Discharge,Modified ranking scale discharge,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_mrs,1,2020 Q2
+Discharge,Modified ranking scale discharge,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_mrs,1,2021 Q2
+Discharge,NIHSS discharge,Quantitative,median,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,discharge_nihss_score,3.0,2021 Q4
+Discharge,NIHSS discharge,Quantitative,median,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,discharge_nihss_score,1,2021 Q4
+Discharge,NIHSS discharge,Quantitative,median,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,discharge_nihss_score,3.0,2019 Q2
+Discharge,NIHSS discharge,Quantitative,median,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,discharge_nihss_score,3.0,2021 Q3
+Discharge,NIHSS discharge,Quantitative,median,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,discharge_nihss_score,2.0,2020 Q2
+Discharge,NIHSS discharge,Quantitative,median,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,discharge_nihss_score,1,2021 Q2
+Discharge,Modified ranking scale 3 month,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,three_m_mrs,,2021 Q4
+Discharge,Modified ranking scale 3 month,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,three_m_mrs,0,2021 Q4
+Discharge,Modified ranking scale 3 month,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,three_m_mrs,4.0,2019 Q2
+Discharge,Modified ranking scale 3 month,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,three_m_mrs,,2021 Q3
+Discharge,Modified ranking scale 3 month,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,three_m_mrs,1,2020 Q2
+Discharge,Modified ranking scale 3 month,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,three_m_mrs,,2021 Q2
+PC,COVID positive,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,covid_test,,2021 Q4
+PC,COVID positive,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,covid_test,,2021 Q4
+PC,COVID positive,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,covid_test,,2019 Q2
+PC,COVID positive,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,covid_test,0,2021 Q3
+PC,COVID positive,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,covid_test,0,2020 Q2
+PC,COVID positive,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,covid_test,0,2021 Q2
+PO,Physiotherapy initiated <= 72 hours after admission,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,physiotherapy_start_within_3days,0,2021 Q4
+PO,Physiotherapy initiated <= 72 hours after admission,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,physiotherapy_start_within_3days,0,2021 Q4
+PO,Physiotherapy initiated <= 72 hours after admission,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,physiotherapy_start_within_3days,,2019 Q2
+PO,Physiotherapy initiated <= 72 hours after admission,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,physiotherapy_start_within_3days,,2021 Q3
+PO,Physiotherapy initiated <= 72 hours after admission,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,physiotherapy_start_within_3days,,2020 Q2
+PO,Physiotherapy initiated <= 72 hours after admission,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,physiotherapy_start_within_3days,,2021 Q2
+PO,Patient examined by occupational therapist,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,occup_physiotherapy_received,,2021 Q4
+PO,Patient examined by occupational therapist,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,occup_physiotherapy_received,,2021 Q4
+PO,Patient examined by occupational therapist,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,occup_physiotherapy_received,,2019 Q2
+PO,Patient examined by occupational therapist,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,occup_physiotherapy_received,0,2021 Q3
+PO,Patient examined by occupational therapist,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,occup_physiotherapy_received,0,2020 Q2
+PO,Patient examined by occupational therapist,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,occup_physiotherapy_received,0,2021 Q2
+PC,Glucose,Quantitative,mean,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,glucose,8.09,2021 Q4
+PC,Glucose,Quantitative,mean,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,glucose,5.88,2021 Q4
+PC,Glucose,Quantitative,mean,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,glucose,7.7,2019 Q2
+PC,Glucose,Quantitative,mean,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,glucose,5.2,2021 Q3
+PC,Glucose,Quantitative,mean,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,glucose,7.34,2020 Q2
+PC,Glucose,Quantitative,mean,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,glucose,12.15,2021 Q2
+PC,LDL cholestorol,Quantitative,mean,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,cholesterol,1.5,2021 Q4
+PC,LDL cholestorol,Quantitative,mean,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,cholesterol,3.44,2021 Q4
+PC,LDL cholestorol,Quantitative,mean,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,cholesterol,4.05,2019 Q2
+PC,LDL cholestorol,Quantitative,mean,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,cholesterol,2.35,2021 Q3
+PC,LDL cholestorol,Quantitative,mean,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,cholesterol,3.8,2020 Q2
+PC,LDL cholestorol,Quantitative,mean,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,cholesterol,4.5,2021 Q2
+PC,BP systolic,Quantitative,mean,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,sys_blood_pressure,130.0,2021 Q4
+PC,BP systolic,Quantitative,mean,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,sys_blood_pressure,164.0,2021 Q4
+PC,BP systolic,Quantitative,mean,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,sys_blood_pressure,164.0,2019 Q2
+PC,BP systolic,Quantitative,mean,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,sys_blood_pressure,130.0,2021 Q3
+PC,BP systolic,Quantitative,mean,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,sys_blood_pressure,165.0,2020 Q2
+PC,BP systolic,Quantitative,mean,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,sys_blood_pressure,130.0,2021 Q2
+PC,BP diastolic,Quantitative,mean,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,dis_blood_pressure,85.0,2021 Q4
+PC,BP diastolic,Quantitative,mean,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,dis_blood_pressure,78.0,2021 Q4
+PC,BP diastolic,Quantitative,mean,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,dis_blood_pressure,84.0,2019 Q2
+PC,BP diastolic,Quantitative,mean,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,dis_blood_pressure,75.0,2021 Q3
+PC,BP diastolic,Quantitative,mean,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,dis_blood_pressure,80.0,2020 Q2
+PC,BP diastolic,Quantitative,mean,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,dis_blood_pressure,84.0,2021 Q2
+Imaging,CT perfusion score,Quantitative,mean,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,perfusion_core,,2021 Q4
+Imaging,CT perfusion score,Quantitative,mean,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,perfusion_core,,2021 Q4
+Imaging,CT perfusion score,Quantitative,mean,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,perfusion_core,,2019 Q2
+Imaging,CT perfusion score,Quantitative,mean,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,perfusion_core,,2021 Q3
+Imaging,CT perfusion score,Quantitative,mean,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,perfusion_core,,2020 Q2
+Imaging,CT perfusion score,Quantitative,mean,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,perfusion_core,,2021 Q2
+Imaging,CT perfusion hypoperfusion,Quantitative,mean,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,hypoperfusion_core,,2021 Q4
+Imaging,CT perfusion hypoperfusion,Quantitative,mean,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,hypoperfusion_core,,2021 Q4
+Imaging,CT perfusion hypoperfusion,Quantitative,mean,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,hypoperfusion_core,,2019 Q2
+Imaging,CT perfusion hypoperfusion,Quantitative,mean,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,hypoperfusion_core,,2021 Q3
+Imaging,CT perfusion hypoperfusion,Quantitative,mean,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,hypoperfusion_core,,2020 Q2
+Imaging,CT perfusion hypoperfusion,Quantitative,mean,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,hypoperfusion_core,,2021 Q2
+PC,Stroke mimics,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,stroke_mimics_diagnosis,,2021 Q4
+PC,Stroke mimics,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,stroke_mimics_diagnosis,,2021 Q4
+PC,Stroke mimics,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,stroke_mimics_diagnosis,,2019 Q2
+PC,Stroke mimics,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,stroke_mimics_diagnosis,,2021 Q3
+PC,Stroke mimics,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,stroke_mimics_diagnosis,,2020 Q2
+PC,Stroke mimics,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,stroke_mimics_diagnosis,,2021 Q2
+PC,mRS 2-5,Quantitative,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,prestroke_mrs,5.0,2021 Q4
+PC,mRS 2-5,Quantitative,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,prestroke_mrs,0,2021 Q4
+PC,mRS 2-5,Quantitative,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,prestroke_mrs,4.0,2019 Q2
+PC,mRS 2-5,Quantitative,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,prestroke_mrs,0,2021 Q3
+PC,mRS 2-5,Quantitative,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,prestroke_mrs,0,2020 Q2
+PC,mRS 2-5,Quantitative,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,prestroke_mrs,0,2021 Q2
+Treatment,TICI scores,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,tici_score,,2021 Q4
+Treatment,TICI scores,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,tici_score,2B,2021 Q4
+Treatment,TICI scores,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,tici_score,,2019 Q2
+Treatment,TICI scores,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,tici_score,,2021 Q3
+Treatment,TICI scores,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,tici_score,3,2020 Q2
+Treatment,TICI scores,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,tici_score,2B,2021 Q2
+PC,Arrival pre-notified,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,prenotification,1,2021 Q4
+PC,Arrival pre-notified,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,prenotification,1,2021 Q4
+PC,Arrival pre-notified,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,prenotification,,2019 Q2
+PC,Arrival pre-notified,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,prenotification,,2021 Q3
+PC,Arrival pre-notified,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,prenotification,,2020 Q2
+PC,Arrival pre-notified,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,prenotification,,2021 Q2
+Bleeding,ICH volume,Categorical_binary,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,bleeding_volume_value,,2021 Q4
+Bleeding,ICH volume,Categorical_binary,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,bleeding_volume_value,,2021 Q4
+Bleeding,ICH volume,Categorical_binary,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,bleeding_volume_value,,2019 Q2
+Bleeding,ICH volume,Categorical_binary,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,bleeding_volume_value,,2021 Q3
+Bleeding,ICH volume,Categorical_binary,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,bleeding_volume_value,,2020 Q2
+Bleeding,ICH volume,Categorical_binary,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,bleeding_volume_value,,2021 Q2
+Bleeding,ICH score,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,ich_score,,2021 Q4
+Bleeding,ICH score,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,ich_score,,2021 Q4
+Bleeding,ICH score,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,ich_score,,2019 Q2
+Bleeding,ICH score,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,ich_score,,2021 Q3
+Bleeding,ICH score,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,ich_score,,2020 Q2
+Bleeding,ICH score,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,ich_score,,2021 Q2
+Bleeding,Hunt-Hess,Categorical,%,azexpgpszpmglxf,Evergreen,Novaria,Q4,2021,hunt_hess_score,,2021 Q4
+Bleeding,Hunt-Hess,Categorical,%,uznrjkmtisetxsg,Evergreen,Novaria,Q4,2021,hunt_hess_score,,2021 Q4
+Bleeding,Hunt-Hess,Categorical,%,dfngrvjkictscmy,Vitality,Novaria,Q2,2019,hunt_hess_score,,2019 Q2
+Bleeding,Hunt-Hess,Categorical,%,xvyeentnlfrcyyx,Riverside,Novaria,Q3,2021,hunt_hess_score,,2021 Q3
+Bleeding,Hunt-Hess,Categorical,%,mcnjbkdjdsycrjf,Evergreen,Novaria,Q2,2020,hunt_hess_score,,2020 Q2
+Bleeding,Hunt-Hess,Categorical,%,uthjemmvtwogzcc,Evergreen,Novaria,Q2,2021,hunt_hess_score,,2021 Q2
