@@ -43,7 +43,19 @@ try:
         values="Value",
         aggfunc="first"
     )
-    df_patients = df_patients.apply(pd.to_numeric, errors='coerce')
+    
+    # Renommage pour corriger le problème des majuscules du CSV
+    df_patients = df_patients.rename(columns={
+        'Gender': 'gender',
+        'Sex': 'sex',
+        'Stroke_Type': 'stroke_type',
+        'Age': 'age'
+    })
+    
+    # errors='ignore' permet de convertir les chiffres (130) en nombres, 
+    # mais laisse les textes ("Male", "Ischemic") intacts au lieu de les effacer !
+    df_patients = df_patients.apply(lambda col: pd.to_numeric(col, errors='ignore'))
+    
     print("Données patients pivotées et chargées avec succès !")
 except Exception as e:
     print(f"Erreur lors du chargement ou du pivot du CSV : {e}")
@@ -131,7 +143,7 @@ def predict_mrs(patient: dict):
     
     except Exception as e:
         print("\n" + "="*50)
-        print(f"🔥 ERREUR CRITIQUE dans /predict : {e}")
+        print(f"ERREUR CRITIQUE dans /predict : {e}")
         traceback.print_exc() 
         print("="*50 + "\n")
         raise HTTPException(status_code=500, detail=str(e))
@@ -162,7 +174,7 @@ def simulate_curve(variable: str, min_val: float, max_val: float, patient: dict)
         
     except Exception as e:
         print("\n" + "="*50)
-        print(f"🔥 ERREUR CRITIQUE dans /simulate_curve : {e}")
+        print(f"ERREUR CRITIQUE dans /simulate_curve : {e}")
         traceback.print_exc() 
         print("="*50 + "\n")
         raise HTTPException(status_code=500, detail=str(e))
