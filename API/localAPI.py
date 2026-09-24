@@ -1,180 +1,194 @@
+"""
+Launch :  uvicorn explain_api:app --reload --port 8000
+"""
+
+from pathlib import Path
+import pickle
+
+import numpy as np
+import pandas as pd
+from catboost import Pool
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-import joblib
-import pandas as pd
-import numpy as np
-import copy
-from catboost import Pool
-import traceback
+from pydantic import BaseModel
 
-app = FastAPI()
+BASE = Path(__file__).parent
+CHEMIN_CSV = BASE / "DataTest_long.csv"
+CHEMIN_MODELE = BASE / "best_catboost_model.pkl"
 
-# --- 1. CONFIGURATION CORS ---
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+SEUILS = {
+    "sys_blood_pressure": dict(bornes=[-np.inf, 111, 180, np.inf], right=False,
+                               label="Sys Blood Pressure", unite="mmHg",
+                               classes=["≤110", "111–179", "≥180"]),
+    "dis_blood_pressure": dict(bornes=[-np.inf, 105, np.inf], right=False,
+                               label="Dis Blood Pressure", unite="mmHg",
+                               classes=["<105", "≥105"]),
+    "glucose":            dict(bornes=[-np.inf, 60, 141, np.inf], right=False,
+                               label="Glucose", unite="mg/dL",
+                               classes=["<60", "60–140", ">140"]),
+    "cholesterol":        dict(bornes=[-np.inf, 70, 101, np.inf], right=False,
+                               label="Cholesterol", unite="mg/dL",
+                               classes=["<70", "70–100", ">100"]),
+    "prestroke_mrs":      dict(bornes=[-np.inf, 2, 3, np.inf], right=False,
+                               label="Pre-stroke mRS", unite="",
+                               classes=["0–1", "2", "3–5"]),
+    "onset_to_door":      dict(bornes=[-np.inf, 4.5, 24, np.inf], right=True,
+                               label="Onset to Door", unite="min",
+                               classes=["≤4.5", "4.5–24", ">24"]),
+    "door_to_imaging":    dict(bornes=[-np.inf, 20, np.inf], right=True,
+                               label="Door to Imaging", unite="min",
+                               classes=["≤20", ">20"]),
+    "door_to_needle":     dict(bornes=[-np.inf, 30, 45, 60, np.inf], right=True,
+                               label="Door to Needle", unite="min",
+                               classes=["≤30", "30–45", "45–60", ">60"]),
+}
 
-# --- 2. CHARGEMENT DES MODÈLES ---
-print("Chargement du modèle CatBoost et de l'imputer...")
-modele = joblib.load('best_catboost_model.pkl')
-imputer = joblib.load('knn_imputer.pkl')
+ANTICOAG_SORTIE = ["discharge_apixaban", "discharge_dabigatran", "discharge_edoxaban",
+                   "discharge_rivaroxaban", "discharge_warfarin", "discharge_heparin"]
 
-# Récupération automatique des variables catégoriques du modèle
-try:
-    cat_indices = modele.get_cat_feature_indices()
-    cat_features_names = [modele.feature_names_[i] for i in cat_indices]
-    print(f"Features catégoriques détectées : {cat_features_names}")
-except Exception as e:
-    print(f"Avertissement (features catégoriques non trouvées) : {e}")
-    # FALLBACK : Si le modèle ne stocke pas les noms, listez-les manuellement ici
-    # cat_features_names = ["sexe", "hypertension", "diabete"]
-    cat_features_names = [] 
+# ---------------------------------------------------------------- chargement --
+modele = pickle.load(open(CHEMIN_MODELE, "rb"))
+NOMS = list(modele.feature_names_)
+CAT = [NOMS[i] for i in sorted(modele.get_cat_feature_indices())]
 
-# --- 3. CHARGEMENT ET PIVOT DU CSV ---
-try:
-    df_long = pd.read_csv("DataTest_long.csv")
-    df_patients = df_long.pivot_table(
-        index="subject_id",
-        columns="variable",
-        values="Value",
-        aggfunc="first"
-    )
-    
-    # Renommage pour corriger le problème des majuscules du CSV
-    df_patients = df_patients.rename(columns={
-        'Gender': 'gender',
-        'Sex': 'sex',
-        'Stroke_Type': 'stroke_type',
-        'Age': 'age'
-    })
-    
-    # errors='ignore' permet de convertir les chiffres (130) en nombres, 
-    # mais laisse les textes ("Male", "Ischemic") intacts au lieu de les effacer !
-    df_patients = df_patients.apply(lambda col: pd.to_numeric(col, errors='ignore'))
-    
-    print("Données patients pivotées et chargées avec succès !")
-except Exception as e:
-    print(f"Erreur lors du chargement ou du pivot du CSV : {e}")
-
-# --- FONCTION HELPER CENTRALE ---
-def prepare_for_catboost(df_raw):
-    """
-    1. Sépare les données pour le KNN Imputer.
-    2. Impute les données manquantes.
-    3. Reconstruit le DataFrame COMPLET avec toutes les features attendues par CatBoost.
-    4. Gère les types pour l'inférence.
-    """
-    # --- 1. SOUS-ENSEMBLE POUR LE KNN IMPUTER ---
-    if hasattr(imputer, "feature_names_in_"):
-        df_for_imputer = df_raw.reindex(columns=imputer.feature_names_in_)
-    else:
-        df_for_imputer = df_raw.copy()
-
-    # Le KNNImputer exige des floats purs, on force la conversion
-    df_for_imputer = df_for_imputer.apply(pd.to_numeric, errors='coerce').astype(float)
-
-    # Imputation
-    array_imputed = imputer.transform(df_for_imputer)
-    df_imputed = pd.DataFrame(array_imputed, columns=df_for_imputer.columns)
-
-    # --- 2. RECONSTRUCTION DU DATAFRAME COMPLET POUR CATBOOST ---
-    # On récupère toutes les colonnes requises par le modèle
-    model_features = modele.feature_names_
-    
-    for col in model_features:
-        if col not in df_imputed.columns:
-            # Si la colonne n'est pas passée par le KNN (ex: nihss_score), 
-            # on la récupère de la requête front-end d'origine
-            if col in df_raw.columns:
-                df_imputed[col] = df_raw[col].values
-            else:
-                # Si elle est totalement absente du payload, on met NaN pour CatBoost
-                df_imputed[col] = np.nan 
-
-    # Alignement final strict sur l'ordre exact attendu par CatBoost
-    df_final = df_imputed.reindex(columns=model_features)
-    
-    # --- 3. RESTAURATION DES TYPES CATÉGORIQUES ---
-    for col in cat_features_names:
-        if col in df_final.columns:
-            # Conversion robuste en chaîne de caractères pour les features catégoriques
-            df_final[col] = df_final[col].fillna(-1).round().astype(int).astype(str)
-            df_final[col] = df_final[col].replace('-1', 'NaN')
-            
-    return df_final
+# `keep_default_na=False` garde les cellules vides en chaine vide au lieu de NaN :
+# un NaN n'est pas serialisable en JSON et faisait tomber la route en erreur 500.
+_long = pd.read_csv(CHEMIN_CSV, low_memory=False, dtype={"Value": str},
+                    keep_default_na=False)
+PATIENTS = {
+    sid: {r["variable"]: r["Value"] for _, r in grp.iterrows()}
+    for sid, grp in _long.groupby("subject_id")
+}
 
 
-# --- 4. ROUTES DE L'API ---
-
-@app.get("/patient/{patient_id}")
-def get_patient(patient_id: str):
-    """Renvoie les données cliniques d'un patient existant"""
-    if patient_id not in df_patients.index:
-        raise HTTPException(status_code=404, detail="Patient introuvable")
-    
-    patient_ligne = df_patients.loc[patient_id]
-    if isinstance(patient_ligne, pd.DataFrame):
-        patient_ligne = patient_ligne.iloc[0]
-        
-    patient_ligne = patient_ligne.replace({np.nan: None})
-    patient_data = patient_ligne.to_dict()
-    return {"donnees": patient_data}
-
-@app.post("/predict")
-def predict_mrs(patient: dict):
-    """Prédit le mRS avec une préparation robuste pour CatBoost"""
+def _nombre(v):
     try:
-        df_nouveau = pd.DataFrame([patient])
-        
-        # Utilisation de la fonction de préparation centralisée
-        df_imputed = prepare_for_catboost(df_nouveau)
-        
-        # Création du Pool CatBoost sécurisé
-        eval_pool = Pool(data=df_imputed, cat_features=cat_features_names)
-        prediction_brute = modele.predict(eval_pool)
-        
-        mrs_final = int(np.clip(np.round(prediction_brute[0]), 0, 6))
-        
-        return {"mRS_predit": mrs_final, "risque_brut": float(prediction_brute[0])}
-    
-    except Exception as e:
-        print("\n" + "="*50)
-        print(f"ERREUR CRITIQUE dans /predict : {e}")
-        traceback.print_exc() 
-        print("="*50 + "\n")
-        raise HTTPException(status_code=500, detail=str(e))
+        f = float(str(v).strip())
+        return f if np.isfinite(f) else None
+    except (TypeError, ValueError):
+        return None
 
-@app.post("/simulate_curve/{variable}")
-def simulate_curve(variable: str, min_val: float, max_val: float, patient: dict):
-    """Génère les 50 points (X, Y) de la courbe de risque CatBoost de manière stable"""
-    try:
-        valeurs_x = np.linspace(min_val, max_val, 50)
-        
-        donnees_clones = []
-        for val in valeurs_x:
-            clone = copy.deepcopy(patient)
-            clone[variable] = val
-            donnees_clones.append(clone)
-            
-        df_clones = pd.DataFrame(donnees_clones)
-        
-        # Préparation vectorisée pour les 50 clones
-        df_imputed = prepare_for_catboost(df_clones)
-        
-        # Création du Pool CatBoost sécurisé
-        eval_pool = Pool(data=df_imputed, cat_features=cat_features_names)
-        predictions_brutes = modele.predict(eval_pool)
-        
-        courbe = [{"x": float(valeurs_x[i]), "y": float(predictions_brutes[i])} for i in range(50)]
-        return {"courbe": courbe}
-        
-    except Exception as e:
-        print("\n" + "="*50)
-        print(f"ERREUR CRITIQUE dans /simulate_curve : {e}")
-        traceback.print_exc() 
-        print("="*50 + "\n")
-        raise HTTPException(status_code=500, detail=str(e))
+
+def _classe(col, valeur):
+    """Valeur brute -> numero de classe, avec le decoupage du modele."""
+    cfg = SEUILS[col]
+    if valeur is None:
+        return None
+    etiquettes = list(range(len(cfg["bornes"]) - 1))
+    c = pd.cut([valeur], bins=cfg["bornes"], labels=etiquettes, right=cfg["right"])[0]
+    return None if pd.isna(c) else int(c)
+
+
+def _vecteur(brut):
+    """Construit la ligne de 45 variables attendue par le modele."""
+    ligne = {}
+    for nom in NOMS:
+        v = _nombre(brut.get(nom))
+        if nom in SEUILS:                       # variable discretisee
+            v = _classe(nom, v)
+        elif nom == "anticoagulant_discharge":
+            vals = [_nombre(brut.get(c)) for c in ANTICOAG_SORTIE]
+            vals = [x for x in vals if x is not None]
+            v = max(vals) if vals else None
+        elif nom == "anticoagulant_before_onset":
+            v = _nombre(brut.get("before_onset_warfarin"))
+        # -1 est la valeur "manquant" utilisee a l'entrainement pour les
+        # categorielles ; 0.0 pour les continues, apres imputation KNN.
+        ligne[nom] = (int(v) if v is not None else -1) if nom in CAT else (v if v is not None else 0.0)
+    X = pd.DataFrame([ligne])[NOMS]
+    for c in CAT:
+        X[c] = X[c].astype(int)
+    return X
+
+
+def _courbe(X, col):
+    """Valeur SHAP et prediction pour chaque classe possible de `col`."""
+    n_classes = len(SEUILS[col]["bornes"]) - 1
+    valeurs = list(range(n_classes))
+    lignes = pd.concat([X] * n_classes, ignore_index=True)
+    lignes[col] = valeurs
+    lignes[col] = lignes[col].astype(int)
+
+    pool = Pool(lignes, cat_features=CAT)
+    shap = modele.get_feature_importance(pool, type="ShapValues")
+    j = NOMS.index(col)
+    predictions = modele.predict(pool)
+    return [
+        {"classe": int(c), "shap": round(float(shap[i, j]), 4),
+         "mrs": round(float(predictions[i]), 3)}
+        for i, c in enumerate(valeurs)
+    ]
+
+
+app = FastAPI(title="XAI Stroke — donnees et explications")
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"],
+                   allow_headers=["*"])
+
+
+@app.get("/patients")
+def liste_patients():
+    return {"patients": sorted(PATIENTS)}
+
+
+@app.get("/patient/{subject_id}")
+def patient(subject_id: str):
+    if subject_id not in PATIENTS:
+        raise HTTPException(404, "patient inconnu")
+    return {"donnees": PATIENTS[subject_id]}
+
+
+class Simulation(BaseModel):
+    """Valeurs brutes modifiees par l'utilisateur, par nom de colonne du registre."""
+    valeurs: dict[str, float] = {}
+
+
+def _explication(subject_id: str, simulation: dict | None = None):
+    if subject_id not in PATIENTS:
+        raise HTTPException(404, "patient inconnu")
+    brut = dict(PATIENTS[subject_id])
+    if simulation:
+        # On remplace les valeurs BRUTES, la discretisation est refaite ensuite :
+        # c'est le meme chemin que pour les donnees reelles, donc pas de
+        # divergence possible entre ce qui est simule et ce qui est servi.
+        for col, valeur in simulation.items():
+            if col in SEUILS:
+                brut[col] = valeur
+    X = _vecteur(brut)
+
+    pool = Pool(X, cat_features=CAT)
+    shap = modele.get_feature_importance(pool, type="ShapValues")
+    prediction = float(modele.predict(pool)[0])
+    valeur_base = float(shap[0, -1])             # derniere colonne = valeur de base
+
+    variables = {}
+    for col, cfg in SEUILS.items():
+        brute = _nombre(brut.get(col))
+        variables[col] = {
+            "label": cfg["label"],
+            "unite": cfg["unite"],
+            "valeur_brute": brute,
+            "classe_actuelle": _classe(col, brute),
+            "seuils": [b for b in cfg["bornes"] if np.isfinite(b)],
+            "libelles_classes": cfg["classes"],
+            "shap_actuel": round(float(shap[0, NOMS.index(col)]), 4),
+            "courbe": _courbe(X, col),
+        }
+
+    return {
+        "patient": subject_id,
+        "simule": bool(simulation),
+        "prediction": {"mrs": round(prediction, 3), "valeur_base": round(valeur_base, 3)},
+        "variables": variables,
+    }
+
+
+@app.get("/explain/{subject_id}")
+def explain(subject_id: str):
+    """Explication du patient tel qu'il est dans le registre."""
+    return _explication(subject_id)
+
+
+@app.post("/explain/{subject_id}")
+def explain_simule(subject_id: str, simulation: Simulation):
+    """Meme chose, avec les valeurs modifiees par l'utilisateur."""
+    return _explication(subject_id, simulation.valeurs)
